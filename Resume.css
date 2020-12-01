@@ -1,0 +1,617 @@
+.root {
+	background-image: url("material/bg雲.png");
+	background-size: cover, 100%;
+	background-attachment: fixed;
+	font-family: "微軟正黑體";
+}
+
+.aa {
+	display: flex;
+	justify-content: space-around;
+}
+
+.head {
+	background-color: #003344;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	padding: 10px;
+}
+
+.content {
+	width: 560px;
+	padding: 30px;
+}
+
+.line {
+	width: 800px;
+	height: 800px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 450px;
+	max-height: 450px;
+	overflow: hidden;
+
+	animation: run 3s 1;
+
+	/*position: relative;
+	left: 600px;
+	top: 50px;
+	*/
+	/* border-left: solid #696773 7px;
+	float: left; */
+
+}
+
+.line>img {
+	width: 100%;
+}
+
+@keyframes run {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 2s ease-out both;
+	animation: rotate-center 2s ease-out both;
+	/*
+	position: relative;
+	left: 120px;
+	top: 8px
+	*/
+}
+
+.ss {
+	background-color: #B3C0A4;
+	padding: 20px;
+	margin: 0 auto;
+	width: 1260px;
+	height: 2600px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 8px #696773 solid;
+}
+
+h3 {
+	/*
+	position: relative;
+	top: 100px;
+	left: 100px;
+	*/
+	font-size: 80px;
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "微軟正黑體";
+	letter-spacing: 15px;
+	text-align: center;
+}
+
+.first2 {
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "Moontime";
+	font-size: 20px;
+	text-align: center;
+	margin-top: -70px;
+	margin-bottom: 50px;
+
+}
+
+
+.first3 {
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: 'Cookie', cursive;
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+}
+
+.first img {
+	/*
+	position: relative;
+	left: 50px;
+	top: 100px;
+	margin: 50px;
+	width: 300px;
+	height: 100px;
+	*/
+
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "Moontime";
+	letter-spacing: 9px;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.map {
+	width: 40px;
+	height: 40px;
+
+}
+
+.first {
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "Moontime";
+	font-size: 20px;
+}
+
+.first p {
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "Moontime";
+	font-size: 20px;
+	padding-top: 10px;
+
+}
+
+.first4 {
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "Moontime";
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0px;
+}
+
+.aa>hr {
+	height: 620px;
+	width: 9px;
+	background-color: #3B3B3B;
+}
+
+.icon2 img {
+	width: 50px;
+	height: 50px;
+	padding: 20px;
+}
+
+hr {
+	background-color: black;
+	width: 1100px;
+	height: 4px;
+}
+
+h2 {
+	font-size: 30px;
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "微軟正黑體";
+	letter-spacing: 15px;
+}
+
+.first5 {
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "Moontime";
+	font-size: 20px;
+	float: left;
+	padding-left: 0px;
+}
+
+/*skill*/
+.circle-wrap {
+	width: 150px;
+	height: 150px;
+	background: #D9D9D9;
+	border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+	clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .circle .mask .fill {
+	clip: rect(0px, 75px, 150px, 0px);
+	background-color: #5A3A31;
+}
+
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+	animation: fill ease-in-out 3s;
+	transform: rotate(100deg);
+}
+
+@keyframes fill {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(100deg);
+	}
+}
+
+.circle-wrap .inside-circle {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: white;
+	line-height: 130px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	z-index: 100;
+	font-weight: 700;
+	font-size: 25px;
+	font-family: "微軟正黑體";
+	color: #5A3A31;
+}
+
+/*circle2*/
+.circle-wrap2 {
+	width: 150px;
+	height: 150px;
+	background: #D9D9D9;
+	border-radius: 50%;
+}
+
+.circle-wrap2 .circle2 .mask2,
+.circle-wrap2 .circle2 .fill2 {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.circle-wrap2 .circle2 .mask2 {
+	clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap2 .circle2 .mask2 .fill2 {
+	clip: rect(0px, 75px, 150px, 0px);
+	background-color: #5A3A31;
+}
+
+.circle-wrap2 .circle2 .mask2.full2,
+.circle-wrap2 .circle2 .fill2 {
+	animation: fill2 ease-in-out 3s;
+	transform: rotate(150deg);
+}
+
+@keyframes fill2 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(150deg);
+	}
+}
+
+.circle-wrap2 .inside-circle2 {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: white;
+	line-height: 130px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	z-index: 100;
+	font-weight: 700;
+	font-size: 25px;
+	font-family: "微軟正黑體";
+	color: #5A3A31;
+}
+
+/*circle3*/
+.circle-wrap3 {
+	width: 150px;
+	height: 150px;
+	background: #D9D9D9;
+	border-radius: 50%;
+}
+
+.circle-wrap3 .circle3 .mask3,
+.circle-wrap3 .circle3 .fill3 {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.circle-wrap3 .circle3 .mask3 {
+	clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap3 .circle3 .mask3 .fill3 {
+	clip: rect(0px, 75px, 150px, 0px);
+	background-color: #5A3A31;
+}
+
+.circle-wrap3 .circle3 .mask3.full3,
+.circle-wrap3 .circle3 .fill3 {
+	animation: fill3 ease-in-out 3s;
+	transform: rotate(160deg);
+}
+
+@keyframes fill3 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(160deg);
+	}
+}
+
+.circle-wrap3 .inside-circle3 {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: white;
+	line-height: 130px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	z-index: 100;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: "微軟正黑體";
+	color: #5A3A31;
+}
+
+/*circle4*/
+
+.circle-wrap4 {
+	width: 150px;
+	height: 150px;
+	background: #D9D9D9;
+	border-radius: 50%;
+}
+
+.circle-wrap4 .circle4 .mask4,
+.circle-wrap4 .circle4 .fill4 {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.circle-wrap4 .circle4 .mask4 {
+	clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap4 .circle4 .mask4 .fill4 {
+	clip: rect(0px, 75px, 150px, 0px);
+	background-color: #5A3A31;
+}
+
+.circle-wrap4 .circle4 .mask4.full4,
+.circle-wrap4 .circle4 .fill4 {
+	animation: fill4 ease-in-out 3s;
+	transform: rotate(155deg);
+}
+
+@keyframes fill4 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(155deg);
+	}
+}
+
+.circle-wrap4 .inside-circle4 {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: white;
+	line-height: 130px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	z-index: 100;
+	font-weight: 700;
+	font-size: 25px;
+	font-family: "微軟正黑體";
+	color: #5A3A31;
+}
+
+.bb {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.bb>hr {
+	background-color: black;
+	width: 1100px;
+	height: 4px;
+}
+
+
+.cc {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 100px;
+	padding-bottom: 80px;
+}
+
+.cc>hr {
+	background-color: black;
+	width: 1100px;
+	height: 4px;
+}
+
+
+/*timeline-------------------------------*/
+p {
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "Moontime";
+	font-size: 25px;
+}
+
+ul li {
+	color: #3B3B3B;
+	font-weight: bold;
+	font-family: "Moontime";
+	font-size: 20px;
+}
+
+/*獲獎*/
+
+.dd{
+	padding: 30px;
+}
+
+.dd>h2{
+	text-align: center;
+}
+
+.skillbar {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 25px 0;
+}
+
+.skillbar p {
+	color: wheat;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+	padding: 0;
+	font-weight: bold;
+	letter-spacing: 1px;
+
+}
+
+.skillbar p:nth-child(2) {
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill {
+	background: #001427;
+	padding: 6px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+.skilllevel {
+	background: #ADFCF9;
+	width: 0%;
+	height: 10px;
+	animation-name: fill8;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+}
+
+@keyframes fill8 {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: 75%;
+	}
+}
+
+.skilllevel1 {
+	background: #ADFCF9;
+	width: 0%;
+	height: 10px;
+	animation-name: fill7;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+}
+
+@keyframes fill7 {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: 65%;
+	}
+}
+
+.skilllevel2 {
+	background: #ADFCF9;
+	width: 0%;
+	height: 10px;
+	animation-name: fill6;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+}
+
+@keyframes fill6 {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: 69%;
+	}
+}
+
+.skilllevel3 {
+	background:#ADFCF9;
+	width: 0%;
+	height: 10px;
+	animation-name: fill5;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+}
+
+@keyframes fill5 {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: 63%;
+	}
+}
+
+
+
+
+/*JS特效*/
+
+.ml3 {
+	font-weight: 900;
+	font-size: 3.5em;
+}
+
+
+
