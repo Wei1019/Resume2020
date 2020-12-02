@@ -68,7 +68,9 @@
 
               <a href="mailto:zxc02514zxc59@mail.com" target="_blank">
                 <img src="material/MAIL ICON.png" alt="Google Mail" title="Google Mail"></a>
-              <img src="material/github.png" alt="Github" title="Github">
+              
+              <a href="https://github.com/Wei1019" target="_blant">
+              <img src="material/github.png" alt="Github" title="Github"></a>
             </div>
           </div>
 
@@ -77,7 +79,33 @@
 
       <hr>
       <div class="bb">
-        <h2>Skills </h2>
+        <h2 class="ml9">
+          <span class="text-wrapper">
+            <span class="letters">Skills</span>
+          </span>
+
+          <script>
+            // Wrap every letter in a span
+              var textWrapper = document.querySelector('.ml9 .letters');
+              textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+              anime.timeline({ loop: true })
+                .add({
+                  targets: '.ml9 .letter',
+                  scale: [0, 1],
+                  duration: 1500,
+                  elasticity: 600,
+                  delay: (el, i) => 45 * (i + 1)
+                }).add({
+                  targets: '.ml9',
+                  opacity: 0,
+                  duration: 1000,
+                  easing: "easeOutExpo",
+                  delay: 1000
+                });
+          </script>
+        </h2>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
         <div class="circle-wrap">
           <div class="circle">
@@ -127,7 +155,34 @@
 
       <hr>
       <div class="cc">
-        <h2>Work Experience </h2>
+        <h4 class="ml9">
+          <span class="text-wrapper">
+            <span class="letters">Work Experience</span>
+          </span>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+          <script>
+            // Wrap every letter in a span
+            var textWrapper = document.querySelector('.ml9 .letters');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({ loop: true })
+              .add({
+                targets: '.ml9 .letter',
+                scale: [0, 1],
+                duration: 1500,
+                elasticity: 600,
+                delay: (el, i) => 45 * (i + 1)
+              }).add({
+                targets: '.ml9',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+              });
+          </script>
+        </h4>
+
 
         <div class="col-md-6 offset-md-6">
 
@@ -151,7 +206,33 @@
       <hr>
 
       <div class="dd">
-        <h2>Professional Skills </h2>
+        <h2 class="m19">
+          <span class="text-wrapper">
+          <span class="letters">Professional Skills</span>
+          </span>
+          <script>
+            // Wrap every letter in a span
+            var textWrapper = document.querySelector('.ml9 .letters');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({ loop: true })
+              .add({
+                targets: '.ml9 .letter',
+                scale: [0, 1],
+                duration: 1500,
+                elasticity: 600,
+                delay: (el, i) => 45 * (i + 1)
+              }).add({
+                targets: '.ml9',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+              });
+          </script>
+
+        </h2>
+        
               <div class="skillbar">
                 <p>HTML</p>
                 <p>75%</p>
@@ -183,8 +264,59 @@
       </div>
       <hr>
       <div class="ee">
-        
+        <h2>Course Project</h2>
+        <button class="accordion">大一上學期|企業概論_美好手作茶</button>
+        <div class="panel">
+          <p>我們是中原大學的學生，經由企業概論這門課來幫助社會上的公益團體，透過我們課程所學來回饋社會，其中接洽、宣傳、販賣……等等工作，都由我們親手執行，經由老師課程的安排漸漸完成我們的任務。</p>
+        </div>
+
+        <button class="accordion">大一下學期|管理學_一起《動》起來</button>
+        <div class="panel">
+          <p>
+            中原動物服務社，是由一群喜歡動物和想幫助流浪動物們的一群大學生所組成的，他們正試著去解決校園內以及周邊流浪動物的問題，給予他們照顧、結紮、尋找一個家......等，我們之所以選擇與他們合作，其一是我們同樣算是喜歡小動物們的一份子，二來我們也是中原大學內的一員，在眾多合作單位之中，更加傾向選擇有共同點的對象，與動服社的成員聯繫後，決定了這一次合作活動的進行。
+          </p>
+        </div>
+
+        <button class="accordion">大二上學期|多媒期中專案</button>
+        <div class="panel">
+          <p>這次多媒期中專案 我原本以為就跟上課教的一樣簡單，但其實很不簡單 很多效果都要額外上網學習，另外我覺得最難的是排版
+            ，常常弄到一半去看看效果如何，結果版面整個跑掉，但我們還是一步一步地把作品完成，真的很佩服那些製作網頁的設師！很感謝我的組員，大家各自負責自己的部分，有問題就討論最後也順利解決，真的很感謝我的組員們!!</p>
+        </div>
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) { acc[i].addEventListener("click", function() { /* Toggle between adding and
+            removing the "active" class, to highlight the button that controls the panel */
+            this.classList.toggle("active"); /* Toggle between hiding and showing the active panel */ var
+            panel=this.nextElementSibling; if (panel.style.display==="block" ) { panel.style.display="none" ; } else {
+            panel.style.display="block" ; } }); }
+        </script>
       </div>
+      <hr>
+      <div class="ff">
+        <h2>Activity/Competition photos</h2>
+         <div class="pho1">
+          <img src="material/企業概論.jpg" style="height: 500px;   width: 800px;" onmouseover="this.src='material/企業02.jpg'" onmouseout="this.src='material/企業概論.jpg'">
+          <p>企業概論_美好手作茶</p>
+         </div>
+         
+          <div class="pho2">
+            <img src="material/animal管理學.jpg" style="height: 500px;width: 800px;" onmouseover="this.src='material/服務學習_200604_0137.jpg'" onmouseout="this.src='material/animal管理學.jpg'">
+            <p>管理學_一起《動》起來</p>
+          </div>
+          
+          <div class="pho3">
+            <img src="material/AI.jpg" style="height: 600px;width: 400px;"
+              onmouseover="this.src='material/獎狀.jpg'" onmouseout="this.src='material/AI.jpg'">
+              <p>AI& Big Date創意海報設計競賽-第二名</p>
+          </div>
+          <div class="pho4">
+            <img src="material/資管之夜.jpg" style="height: 500px;width: 800px;" onmouseover="this.src='material/資管之夜02.jpg'"
+              onmouseout="this.src='material/資管之夜.jpg'">
+            <p>109資管之夜</p>
+          </div>
+       </div>
     </div>
   </div>
 

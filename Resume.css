@@ -75,7 +75,7 @@
 	padding: 20px;
 	margin: 0 auto;
 	width: 1260px;
-	height: 2600px;
+	height: 6460px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -532,7 +532,7 @@ ul li {
 	width: 0%;
 	height: 10px;
 	animation-name: fill8;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-fill-mode: both;
 }
 
@@ -551,7 +551,7 @@ ul li {
 	width: 0%;
 	height: 10px;
 	animation-name: fill7;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-fill-mode: both;
 }
 
@@ -570,7 +570,7 @@ ul li {
 	width: 0%;
 	height: 10px;
 	animation-name: fill6;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-fill-mode: both;
 }
 
@@ -589,7 +589,7 @@ ul li {
 	width: 0%;
 	height: 10px;
 	animation-name: fill5;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-fill-mode: both;
 }
 
@@ -602,7 +602,13 @@ ul li {
 		width: 63%;
 	}
 }
+.ee {
+	padding: 30px;
+}
 
+.ee>h2 {
+	text-align: center;
+}
 
 
 
@@ -615,3 +621,107 @@ ul li {
 
 
 
+/*專案*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: #5D737E;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	color: white;
+	font-weight: bold;
+	font-family: "Moontime";
+	font-size: 35px;
+	text-align: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+	background-color: #5D737E;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	padding: 0 18px;
+	background-color: #B2C9AB;
+	display: none;
+	overflow: hidden;
+}
+
+
+.ff {
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	padding-top: 0px;
+	padding-bottom: 100px;
+	text-align: center;
+	padding: 200px;
+}
+
+.ff>h2{
+	margin-top: -150px;
+}
+
+.ff>hr {
+	background-color: black;
+	width: 1100px;
+	height: 4px;
+}
+
+
+.pho1{
+	padding-bottom: 100px;
+}
+.pho1:hover{
+	transform: scale(1.1);
+}
+
+.pho2:hover {
+	transform: scale(1.1);
+}
+.pho3:hover{
+	transform: scale(1.1);
+}
+.pho2{
+	padding-bottom: 50px;
+}
+.pho3{
+	padding: 100px;
+}
+.pho4:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+.ml9 {
+	position: relative;
+	font-weight: 200;
+	font-size: 50px;
+	font-weight: bold;
+	color: #3B3B3B;
+}
+
+.ml9 .text-wrapper {
+	position: relative;
+	display: inline-block;
+	padding-top: 0.2em;
+	padding-right: 0.05em;
+	padding-bottom: 0.1em;
+	overflow: hidden;
+}
+
+.ml9 .letter {
+	transform-origin: 50% 100%;
+	display: inline-block;
+	line-height: 1em;
+}
