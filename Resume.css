@@ -36,14 +36,6 @@
 	overflow: hidden;
 
 	animation: run 3s 1;
-
-	/*position: relative;
-	left: 600px;
-	top: 50px;
-	*/
-	/* border-left: solid #696773 7px;
-	float: left; */
-
 }
 
 .line>img {
@@ -63,11 +55,6 @@
 .rotate-center {
 	-webkit-animation: rotate-center 2s ease-out both;
 	animation: rotate-center 2s ease-out both;
-	/*
-	position: relative;
-	left: 120px;
-	top: 8px
-	*/
 }
 
 .ss {
@@ -75,7 +62,7 @@
 	padding: 20px;
 	margin: 0 auto;
 	width: 1260px;
-	height: 6460px;
+	height:auto;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -83,11 +70,6 @@
 }
 
 h3 {
-	/*
-	position: relative;
-	top: 100px;
-	left: 100px;
-	*/
 	font-size: 80px;
 	color: #3B3B3B;
 	font-weight: bold;
@@ -118,15 +100,6 @@ h3 {
 }
 
 .first img {
-	/*
-	position: relative;
-	left: 50px;
-	top: 100px;
-	margin: 50px;
-	width: 300px;
-	height: 100px;
-	*/
-
 	color: #3B3B3B;
 	font-weight: bold;
 	font-family: "Moontime";
@@ -471,7 +444,7 @@ h2 {
 }
 
 
-/*timeline-------------------------------*/
+/*timeline*/
 p {
 	color: #3B3B3B;
 	font-weight: bold;
@@ -725,3 +698,4 @@ ul li {
 	display: inline-block;
 	line-height: 1em;
 }
+
