@@ -159,6 +159,9 @@ h3 {
 	height: 50px;
 	padding: 20px;
 }
+.icon2:hover{
+		transform: scale(1.2);
+}
 
 hr {
 	background-color: black;
@@ -595,7 +598,7 @@ ul li {
 
 
 /*專案*/
-/* Style the buttons that are used to open and close the accordion panel */
+
 .accordion {
 	background-color: #5D737E;
 	cursor: pointer;
@@ -612,13 +615,13 @@ ul li {
 	text-align: center;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active,
 .accordion:hover {
 	background-color: #5D737E;
 }
 
-/* Style the accordion panel. Note: hidden by default */
+
 .panel {
 	padding: 0 18px;
 	background-color: #B2C9AB;
@@ -670,10 +673,6 @@ ul li {
 .pho4:hover{
 	transform: scale(1.1);
 }
-
-
-
-
 
 
 .ml9 {
